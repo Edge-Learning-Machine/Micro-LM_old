@@ -45,6 +45,6 @@ NOTE: "source" and "include" folders generated in python are different for each 
 
 An example project called "AI_TEST" is provided to clear this procedure.
 
-## References:
+## References
 F., Sakr, F., Bellotti, R., Berta, A., De Gloria, "Machine Learning on Mainstream Microcontrollers," Sensors 2020, 20, 2638.
 https://www.mdpi.com/1424-8220/20/9/2638
