@@ -44,3 +44,7 @@ In ./core directory of the created project in STMCubeIDE:
 NOTE: "source" and "include" folders generated in python are different for each dataset, so you should for each dataset test in python (and for each algorithm) replace the new generated folders following instruction number (2)
 
 An example project called "AI_TEST" is provided to clear this procedure.
+
+## References:
+F., Sakr, F., Bellotti, R., Berta, A., De Gloria, "Machine Learning on Mainstream Microcontrollers," Sensors 2020, 20, 2638.
+https://www.mdpi.com/1424-8220/20/9/2638
