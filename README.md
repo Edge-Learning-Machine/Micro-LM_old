@@ -1,8 +1,25 @@
 # MicroML
 
+Micro-ML is a plain C library. It implements the following ML algorithms:
+- Linear SVM
+- Decision Tree
+- K-NN
+- ANN. This algorithm requires the X-CUBE-AI library for STM32 microcontrollers.
+
+We are extending the library to other algorithms, also unsupervised. Your voluntary contribution is welcome.
+
+At present, the library is optimized for memory usage. The algorithms parameters are stored in source files created by Desk-LM, which performs the training phase.
+
+We are currently working to provide dynamic configurability to all the algorithms.
+
+## References
+F., Sakr, F., Bellotti, R., Berta, A., De Gloria, "Machine Learning on Mainstream Microcontrollers," Sensors 2020, 20, 2638.
+https://www.mdpi.com/1424-8220/20/9/2638
+
+## Usage
 Create a new project using STM32CubeIDE
 
-## ANN: 
+### ANN: 
 1- Load the generated .h5 model from DeskML into STM32CubeIDE and generate the code
 
 2- Copy the generated files from DeskML "minimal_testing_set.c" and "PPparams.c" from this directory ./out/source
@@ -13,7 +30,7 @@ Create a new project using STM32CubeIDE
 
 5- In your created project using STM32CubeIDE go to ./Core/Inc and paste them
 
-### Testing
+#### Testing
 There are two options for testing the generated C code:
 
 1- Testing the dataset: using "minimal_testing_set.h"
@@ -22,7 +39,7 @@ There are two options for testing the generated C code:
 
 These two steps are clear in the example project called "Test_ANN" (the only modification done is in the ./X-CUBE-AI/App/app_x-cube-ai.c)
 
-## SVM/K-NN/DT:
+### SVM/K-NN/DT:
 Copy from DeskML the .c files  to ./Core/Src directory and .h files to ./Core/Inc directory in the new created project using STM32CubeIDE
 
 In ./core directory of the created project in STMCubeIDE:
@@ -43,8 +60,4 @@ In ./core directory of the created project in STMCubeIDE:
 
 NOTE: "source" and "include" folders generated in python are different for each dataset, so you should for each dataset test in python (and for each algorithm) replace the new generated folders following instruction number (2)
 
-An example project called "AI_TEST" is provided to clear this procedure.
-
-## References
-F., Sakr, F., Bellotti, R., Berta, A., De Gloria, "Machine Learning on Mainstream Microcontrollers," Sensors 2020, 20, 2638.
-https://www.mdpi.com/1424-8220/20/9/2638
+An example project called "AI_TEST" is provided to clearify this procedure.
