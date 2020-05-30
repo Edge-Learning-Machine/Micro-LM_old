@@ -12,7 +12,7 @@ At present, the library is optimized for memory usage. The algorithms parameters
 
 We are currently working to provide dynamic configurability to all the algorithms.
 
-## References
+## Reference article for more infomation
 F., Sakr, F., Bellotti, R., Berta, A., De Gloria, "Machine Learning on Mainstream Microcontrollers," Sensors 2020, 20, 2638.
 https://www.mdpi.com/1424-8220/20/9/2638
 
