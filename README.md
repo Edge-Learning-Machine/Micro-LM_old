@@ -1,6 +1,6 @@
 # MicroML
 
-Micro-ML is a plain C library. It implements the following ML algorithms:
+Micro-ML is a plain C library for machine learning on edge devices (it can be used also on desktops). It implements the following ML algorithms:
 - Linear SVM
 - Decision Tree
 - K-NN
