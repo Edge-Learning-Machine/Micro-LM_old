@@ -28,3 +28,7 @@ The program must be configured in AI_main.h, where the user has to specify some 
 - if DS_TEST is defined, then, if you define SAMPLE_TESTINGSET, a minimal_testing_set (.c and .h files) is used, which is produced by Desk-LM if its nTests variable is different from 'full'. Otherwise (if DS_TEST is defined), testing_set (.c and .h files) is used, which is produced by Desk-LM if its nTests variable is equal to 'full'.
 - REGRESSION, if you want to perform a regression. Default is classification (no regression)
 
+The key functions are:
+- <algo>_test_dataset(isRegression) for (whole or minimal) dataset testing
+- preprocess(X), where X is the sample vector
+- <algo>_classification(X), where X is the sample vector
