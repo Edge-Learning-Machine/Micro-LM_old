@@ -1,6 +1,8 @@
 #ifndef AI_MAIN_H
 #define AI_MAIN_H
 
+#include <stdbool.h>
+
 //#define SVM
 //#define DT
 #define KNN
