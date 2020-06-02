@@ -29,6 +29,6 @@ The program must be configured in AI_main.h, where the user has to specify some 
 - REGRESSION, if you want to perform a regression. Default is classification (no regression)
 
 The key functions are:
-- <algo>_test_dataset(isRegression) for (whole or minimal) dataset testing
+- algo_test_dataset(isRegression) for (whole or minimal) dataset testing. algo is knn, decisionTree, svm
 - preprocess(X), where X is the sample vector
-- <algo>_classification(X), where X is the sample vector
+- algo_classification(X), where X is the sample vector. algo is knn, decisionTree, svm
