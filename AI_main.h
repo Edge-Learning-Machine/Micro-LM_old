@@ -3,6 +3,9 @@
 
 #include <stdbool.h>
 
+/*
+ * Define the algorithm
+ */
 //#define SVM
 //#define DT
 #define KNN
