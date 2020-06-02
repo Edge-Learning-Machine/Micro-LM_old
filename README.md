@@ -25,6 +25,6 @@ The program expects to find files produced by Desk-LM for a given algorithm and 
 The program must be configured in AI_main.h, where the user has to specify some #define:
 - The algorithm: SVM or DT or KNN
 - DS_TEST, if you want to test performance in a dataset, instead of doing one shot estimations
-- if DS_TEST is defined, then, if you define SAMPLE_TESTINGSET, a minimal_testing_set (.c and .h files) is used, which is produced by Desk-LM if its nTests variable is different from 'full'. Otherwise (if DS_TEST is defined), testing_set (.c and .h files) is used
+- if DS_TEST is defined, then, if you define SAMPLE_TESTINGSET, a minimal_testing_set (.c and .h files) is used, which is produced by Desk-LM if its nTests variable is different from 'full'. Otherwise (if DS_TEST is defined), testing_set (.c and .h files) is used, which is produced by Desk-LM if its nTests variable is equal to 'full'.
 - REGRESSION, if you want to perform a regression. Default is classification (no regression)
 
